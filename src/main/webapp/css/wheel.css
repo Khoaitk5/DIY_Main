@@ -1,0 +1,134 @@
+:root {
+    --text-color: #000000;
+    --main-color: #83B735;
+    --gray-bg: #f5f5f5;
+}
+
+/* ==========================
+   WHEEL STYLES
+========================== */
+.wheel-section {
+    padding: 100px 20px 60px;
+    background-color: #fafafa;
+}
+
+.wheel-container {
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    position: relative;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #dcdcdc;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(0deg);
+    transition: transform 5s ease-out;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+}
+
+.segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    background-color: var(--gray-bg);
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    text-align: center;
+    padding: 0 4px;
+}
+
+.wheel::after {
+    content: '';
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    z-index: 10;
+}
+
+.pointer {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 20px solid #ff4d4f;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+}
+
+/* ==========================
+   SPIN BUTTON
+========================== */
+#spinBtn {
+    margin-top: 2rem;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#spinBtn:hover {
+    background-color: #74a634;
+}
+
+/* ==========================
+   FOOTER CUSTOMIZED
+========================== */
+.footer-lucky {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1.2rem 0;
+    background: #fff;
+    margin-top: 4rem;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 -2px 14px rgba(0,0,0,0.04);
+}
+
+.footer-lucky span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+    .wheel-container {
+        width: 260px;
+        height: 260px;
+    }
+
+    #spinBtn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

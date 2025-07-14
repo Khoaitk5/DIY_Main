@@ -19,6 +19,100 @@
             <version>${jakartaee}</version>
             <scope>provided</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.6.1.jre11</version> <!-- hoặc jre8/jre17 tùy JDK -->
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>2.8.0</version>
+    </dependency>
+
+    <!-- Google HTTP Client -->
+    <dependency>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client</artifactId>
+        <version>1.47.0</version>
+    </dependency>
+
+    <!-- Google OAuth Client -->
+    <dependency>
+        <groupId>com.google.oauth-client</groupId>
+        <artifactId>google-oauth-client</artifactId>
+        <version>1.39.0</version>
+    </dependency>
+
+    <!-- Gson -->
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.13.1</version>
+    </dependency>
+
+    <!-- Google HTTP Jackson2 -->
+    <dependency>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client-jackson2</artifactId>
+        <version>1.47.0</version>
+    </dependency>
+
+    <!-- Jackson Core -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>2.13.1</version>
+    </dependency>
+
+    <!-- Guava -->
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>31.1-jre</version>
+    </dependency>
+
+    <!-- OpenCensus API -->
+    <dependency>
+        <groupId>io.opencensus</groupId>
+        <artifactId>opencensus-api</artifactId>
+        <version>0.28.3</version>
+    </dependency>
+
+    <!-- OpenCensus Contrib HTTP Util -->
+    <dependency>
+        <groupId>io.opencensus</groupId>
+        <artifactId>opencensus-contrib-http-util</artifactId>
+        <version>0.28.3</version>
+    </dependency>
+
+    <!-- gRPC Context -->
+    <dependency>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-context</artifactId>
+        <version>1.56.1</version>
+    </dependency>
+
     </dependencies>
     
     <build>
